@@ -10,6 +10,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   :numbered
    about.rst
    ch02.rst
    ch01.rst
