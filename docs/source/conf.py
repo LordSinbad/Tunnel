@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# Tunnel documentation build configuration file, created by
-# sphinx-quickstart on Fri Dec 11 15:19:41 2015.
+# tunnel documentation build configuration file, created by
+# sphinx-quickstart on Fri Dec 11 16:08:24 2015.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -29,7 +29,13 @@ import shlex
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
+    'sphinx.ext.todo',
+    'sphinx.ext.coverage',
+    'sphinx.ext.ifconfig',
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -46,9 +52,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Tunnel'
-copyright = u'2015, chenw'
-author = u'chenw'
+project = u'tunnel'
+copyright = u'2015, chenwei'
+author = u'chenwei'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -74,7 +80,7 @@ language = 'zh_CN'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build']
+exclude_patterns = []
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -101,7 +107,7 @@ pygments_style = 'sphinx'
 #keep_warnings = False
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = False
+todo_include_todos = True
 
 
 # -- Options for HTML output ----------------------------------------------
@@ -200,7 +206,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Tunneldoc'
+htmlhelp_basename = 'tunneldoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -222,8 +228,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'Tunnel.tex', u'Tunnel Documentation',
-   u'chenw', 'manual'),
+  (master_doc, 'tunnel.tex', u'tunnel Documentation',
+   u'chenwei', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -252,7 +258,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'tunnel', u'Tunnel Documentation',
+    (master_doc, 'tunnel', u'tunnel Documentation',
      [author], 1)
 ]
 
@@ -266,8 +272,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'Tunnel', u'Tunnel Documentation',
-   author, 'Tunnel', 'One line description of project.',
+  (master_doc, 'tunnel', u'tunnel Documentation',
+   author, 'tunnel', 'One line description of project.',
    'Miscellaneous'),
 ]
 
