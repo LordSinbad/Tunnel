@@ -10,9 +10,9 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-   posts/about.rst
-   posts/ch02.rst
-   posts/ch01.rst
+   about.rst
+   ch02.rst
+   ch01.rst
 
 
 Indices and tables
